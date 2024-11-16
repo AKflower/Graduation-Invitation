@@ -80,7 +80,7 @@ body {
 }
 
 #second {
-  background-image: url("/assets/images/second-background.png");
+  background-image: url("../assets/images/second-background.png");
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -98,7 +98,7 @@ body {
   width: 2vw;
   height: 5em;
   position: absolute;
-  background-image: url("/assets/images/tree.png");
+  background-image: url("../assets/images/tree.png");
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: contain;
@@ -109,7 +109,7 @@ body {
   width: 20vw;
   height: 10em;
   position: absolute;
-  background-image: url("/assets/images/cloud.png");
+  background-image: url("../assets/images/cloud.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -148,7 +148,7 @@ body {
 }
 
 .forest{
-  background-image: url('/assets/images/forest.png');
+  background-image: url('../assets/images/forest.png');
   background-size: cover;
   width: 100vw;
   height: 100vh;
