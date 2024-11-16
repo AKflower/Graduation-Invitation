@@ -274,7 +274,7 @@ body {
 }
 
 .chap-n {
-  padding: 2em 0;
+  padding: 2em 1em;
   background-color: black;
   color: white;
   font-family: "Pacifico";
@@ -285,6 +285,23 @@ body {
   width: 20em;
 }
 
+a {
+  text-decoration: none;
+}
+
+a button{
+  border-radius: 50%;
+  border: 1px solid white;
+  height: 4em;
+  width: 4em;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+a button:hover {
+  transform: scale(1.2);
+}
 
 
 @media (min-width: 1700px) {

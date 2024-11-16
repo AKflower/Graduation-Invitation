@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./styles/style.css" class="">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -133,8 +134,10 @@
           </div>
         </div>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center relative">
           <img src="./assets/images/line-2.png" alt="" style="width: 5vw;">
+          <div class="tree" style="top:50%;left:10vw;"></div>
+          <div class="tree" style="top:52%;left:12vw;"></div>
         </div>
 
         <div class="chap-6">
@@ -159,8 +162,10 @@
            <p class="">Đi vì CTXH nhưng nhận được nhiều hơn thế</p>
           </div>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center relative">
           <img src="./assets/images/line-1.png" alt="" style="width: 25vw;">
+          <div class="snow-1"></div>
+          <div class="snow-1" style="top: 50%;left: 0;"></div>
         </div>
 
         <div class="chap-8">
@@ -176,38 +181,60 @@
 
 
     </div>
-    <div id="fourth">
-      <div class="forest">
+
+
+  </div>
+  <div id="fourth">
+    <div class="forest">
+
+    </div>
+    <div class="chap-n">
+      <div class="flex flex-col align-center" style="margin: 10px auto; gap: 2em">
+        <div class="">
+          <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        </div>
+        <div class="text-center">
+          <p>Ngày tháng trôi theo nhịp điệu chậm rãi</p>
+          <p>nhưng lại khiến mình không kịp nhận ra đã dần quen với ngôi trường này</p>
+          <p>Dần quen việc ngủ ở hành lang... đôi khi là trong lớp học</p>
+          <p>Dần quen việc nhận những con điểm 10 bẻ đôi</p>
+          <p>Dần quen việc tự nghiên cứu</p>
+          <p>Dần quen chạy deadline</p>
+        </div>
+
+        <div class="text-center">
+          <p>Bách Khoa dạy mình nhiều lắm, có những thứ đến tận cuối hành trình này mình mới nhận ra được!</p>
+        </div>
+
+        <div class="text-center">
+          <p>Và để có thể khép lại hành trình này một cách trọn vẹn, con/em/mình thân mời mọi người đến chung vui và chụp những tấm hình kỷ niệm tại buổi lễ tốt nghiệp.</p>
+        </div>
+
 
       </div>
-      <div class="chap-n">
-        <div class="flex flex-col align-center" style="margin: 10px auto; gap: 2em">
-          <div class="">
-            <p>.</p>
-          <p>.</p>
-          <p>.</p>
-          </div>
-          <div class="text-center">
-            <p>Ngày tháng trôi theo nhịp điệu chậm rãi</p>
-            <p>nhưng lại khiến mình không kịp nhận ra đã dần quen với ngôi trường này</p>
-            <p>Dần quen việc ngủ ở hành lang... đôi khi là trong lớp học</p>
-            <p>Dần quen việc nhận những con điểm 10 bẻ đôi</p>
-            <p>Dần quen việc tự nghiên cứu</p>
-            <p>Dần quen chạy deadline</p>
-          </div>
+      <div class="flex flex-col align-center justify-center" style="padding: 1em 0;">
+        <img src="./assets/images/invitation.png" class="invitation">
+        <div class="flex flex-row justify-center align-center" style="gap: 1em; padding: 2em 0 0 0;">
 
-          <div class="text-center">
-            <p>Bách Khoa dạy mình nhiều lắm, có những thứ đến tận cuối hành trình này mình mới nhận ra được!</p>
-          </div>
+          <a href="tel:0364438082">
+            <button>
+              <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6866 6.4791L10.0376 5.31617C9.15317 3.73144 6.93076 3.54428 5.53781 4.93723C4.7008 5.77423 4.04952 6.7996 4.00655 7.93309C3.95086 9.40215 4.22428 11.6609 5.83644 14.1061L10.1147 9.8278C11.0372 8.90533 11.2723 7.52858 10.6866 6.4791ZM14.1722 13.8853L9.89393 18.1636C12.3391 19.7757 14.5979 20.0491 16.0669 19.9934C17.2004 19.9505 18.2258 19.2992 19.0628 18.4622C20.4557 17.0692 20.2686 14.8468 18.6838 13.9624L17.5209 13.3134C16.4714 12.7277 15.0947 12.9628 14.1722 13.8853Z" fill="#ffffff"></path> <path opacity="0.5" d="M11.0245 12.9758C8.99576 10.9471 10.1147 9.82812 10.1147 9.82812L5.83643 14.1064C6.31827 14.8372 6.91971 15.5846 7.66769 16.3326C8.41567 17.0806 9.16311 17.682 9.89392 18.1639L14.1722 13.8856C14.1722 13.8856 13.0532 15.0045 11.0245 12.9758Z" fill="#ffffff"></path> </g></svg>
+            </button>
+          </a>
+          <a href="https://www.facebook.com/khoa.nguyenanh.1426">
+            <button>
+              <svg fill="#ffffff" width="2em" height="2em" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1168.737 487.897c44.672-41.401 113.824-36.889 118.9-36.663l289.354-.113 6.317-417.504L1539.65 22.9C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l62.045-451.233H1126.66v-69.152c0-54.937 14.214-96.112 42.078-122.058" fill-rule="evenodd"></path> </g></svg>
+            </button>
+          </a>
 
-          <div class="text-center">
-            <p>Và để có thể khép lại hành trình này một cách trọn vẹn, con/em/mình thân mời mọi người đến chung vui và chụp những tấm hình kỷ niệm tại buổi lễ tốt nghiệp.</p>
-          </div>
+          <a href="https://maps.app.goo.gl/8iVU8BZvJeshEe879">
+            <button>
+              <svg width="2em" height="2em" viewBox="0 0 1024 1024" fill="#ffffff" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 1012.8c-253.6 0-511.2-54.4-511.2-158.4 0-92.8 198.4-131.2 283.2-143.2h3.2c12 0 22.4 8.8 24 20.8 0.8 6.4-0.8 12.8-4.8 17.6-4 4.8-9.6 8.8-16 9.6-176.8 25.6-242.4 72-242.4 96 0 44.8 180.8 110.4 463.2 110.4s463.2-65.6 463.2-110.4c0-24-66.4-70.4-244.8-96-6.4-0.8-12-4-16-9.6-4-4.8-5.6-11.2-4.8-17.6 1.6-12 12-20.8 24-20.8h3.2c85.6 12 285.6 50.4 285.6 143.2 0.8 103.2-256 158.4-509.6 158.4z m-16.8-169.6c-12-11.2-288.8-272.8-288.8-529.6 0-168 136.8-304.8 304.8-304.8S816 145.6 816 313.6c0 249.6-276.8 517.6-288.8 528.8l-16 16-16-15.2zM512 56.8c-141.6 0-256.8 115.2-256.8 256.8 0 200.8 196 416 256.8 477.6 61.6-63.2 257.6-282.4 257.6-477.6C768.8 172.8 653.6 56.8 512 56.8z m0 392.8c-80 0-144.8-64.8-144.8-144.8S432 160 512 160c80 0 144.8 64.8 144.8 144.8 0 80-64.8 144.8-144.8 144.8zM512 208c-53.6 0-96.8 43.2-96.8 96.8S458.4 401.6 512 401.6c53.6 0 96.8-43.2 96.8-96.8S564.8 208 512 208z" fill=""></path></g></svg>
+            </button>
+          </a>
 
-
-        </div>
-        <div class="flex justify-center">
-          <img src="./assets/images/invitation.png" class="invitation">
         </div>
       </div>
 
