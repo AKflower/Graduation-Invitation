@@ -1,6 +1,7 @@
 :root {
   --primary-color: #1488DB;
   --secondary-color: #022A93;
+  --accent-color: #5E4843;
   --text-color: #333;
 }
 
@@ -11,6 +12,12 @@
 
 body {
   font-family: "Montserrat";
+}
+
+.first-container{
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 #first {
@@ -24,6 +31,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  animation: fadeInScaleUp 1s ease-out forwards;
 }
 .conner-right img {
   width: 30vw;
@@ -41,34 +49,263 @@ body {
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 2;
+
 }
 
 .logo img {
   width: 20vw;
   height: auto;
+  animation: fadeInScaleUp 1.5s ease-out forwards;
 }
 
 .logo p {
   font-family: "Dancing Script";
   color: var(--secondary-color);
   font-size: 64px;
+  animation: fadeInScaleUp 1.5s ease-out forwards;
+
 }
 
 .conner-left {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 20%;
+  left: 10vw;
   z-index: 1;
+  animation: fadeInScaleUp 1s ease-out forwards;
 }
 
 .conner-left img {
-  width: 30vw;
+  width: 20vw;
   height: auto;
+}
+
+#second {
+  background-image: url("/assets/images/second-background.png");
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.snows{
+  position: relative;
+  height: 15em;
+}
+.tree {
+  width: 2vw;
+  height: 5em;
+  position: absolute;
+  background-image: url("/assets/images/tree.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  opacity: .4;
+}
+
+.snow-1, .snow-2, .snow-3{
+  width: 20vw;
+  height: 10em;
+  position: absolute;
+  background-image: url("/assets/images/cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.snow-1{
+  left: 10vw;
+
+}
+
+.snow-2{
+  right: 20vw;
+  top: 5em;
+}
+
+.snow-3 {
+  right: 0;
+}
+
+
+
+#third {
+
+  width: 100vw;
+  box-shadow: 1px -2px 18px rgb(255, 255, 255);
+  background-color: white;
+  position: relative;
+  z-index: 4;
+
+}
+
+
+#fourth {
+  position: relative;
+  z-index: 5;
+}
+
+.forest{
+  background-image: url('/assets/images/forest.png');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom;
+
+}
+
+#btn-auto {
+  margin: 0 auto 2em auto;
+  width: max-content;
+  background-color: var(--primary-color);
+  position: relative;
+  font-weight: 600;
+  transform: rotate(-5deg);
+  padding: 2em;
+  cursor: pointer;
+  width: 15em;
+}
+
+.btn-auto__content{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border: 1px solid rgb(29, 26, 26);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.accent{
+  font-weight: 700;
+  font-family: "Pacifico";
+  color: var(--accent-color);
+  font-size: 36px;
+  width: max-content;
+}
+
+.chap-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+
+.chap-1 img {
+  width: 20em;
+}
+
+.border-dot{
+  border-radius: 50%;
+  border: 2px dashed var(--accent-color);
+  padding: 1em;
+  width: max-content;
+}
+.border-dot img {
+  border-radius: 10px;
+}
+.chap-3 img {
+  width: 30em;
+}
+.chap-3 .border-dot {
+  transform: rotate(-10deg);
+}
+.chap-3 {
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+
+}
+
+.chap-4 img {
+  width: 30em;
+}
+
+.chap-4 {
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.chap-5 img {
+  width: 10em;
+}
+.chap-5 {
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.chap-6 img {
+  width: 15em;
+}
+.chap-6 {
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.chap-7 img,
+.chap-8 img {
+  width: 30em;
+}
+.chap-7,
+.chap-8 {
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.chap-n {
+  padding: 2em 0;
+  background-color: black;
+  color: white;
+  font-family: "Pacifico";
+  font-size: 36px;
+}
+
+.invitation {
+  width: 20em;
+}
+
+
+
+@media (min-width: 1700px) {
+  .accent{
+    font-weight: 700;
+    font-family: "Pacifico";
+    color: var(--accent-color);
+    font-size: 3vw;
+    width: max-content;
+  }
+  .chap-1 img {
+    width: 20vw;
+  }
 }
 
 @media (max-width: 1400px) {
   .logo p {
     font-size: 52px;
+  }
+  p {
+    font-size: 28px;
   }
 
 
@@ -81,7 +318,37 @@ body {
   .logo img {
     width: 30vw;
   }
+  .chap-1{
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  .chap-1 img {
+    width: 15em;
+  }
+  .accent{
+    font-size: 25px;
+  }
+  .chap-3 img,
+  .chap-7 img,
+  .chap-8 img,
+  .chap-4 img
+  {
+    width: 50vw;
+  }
+  .chap-5 img {
+    width: 30vw;
+  }
+  .chap-3, .chap-7,
+  .chap-8, .chap-4 ,
+  .chap-5 {
+    flex-direction: column;
+  }
+  p {
+    font-size: 24px;
+    text-align: center;
+  }
 }
+
 
 @media (max-width: 800px) {
   .logo img {
@@ -90,6 +357,13 @@ body {
   .logo p {
     font-size: 36px;
   }
+  p {
+    font-size: 18px;
+  }
+  .invitation {
+    width: 90%;
+  }
+
 }
 
 
@@ -106,6 +380,9 @@ body {
   }
   .logo p {
     font-size: 6vw;
+  }
+  p {
+    font-size: 16px;
   }
 }
 
@@ -127,4 +404,69 @@ body {
   .conner-right img {
     width: 40vw;
   }
+}
+
+
+
+@keyframes fadeInScaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+/* short-hand */
+
+.grid {
+  display: grid;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
 }
